@@ -1,0 +1,109 @@
+html {
+    touch-action: manipulation;
+}
+
+body {
+    font-size: 1.1em;
+    font-family: sans-serif;
+    background-color: #303030;
+
+    /* iOS Safari */
+    -webkit-touch-callout: none;
+    /* Safari */
+    -webkit-user-select: none;
+    /* Konqueror HTML */
+    -khtml-user-select: none;
+    /* Firefox */
+    -moz-user-select: none;
+    /* Internet Explorer/Edge */
+    -ms-user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+    user-select: none;
+
+}
+
+.contents-wrapper {
+    display: inline-block;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.create-card-button {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 15em;
+    margin: 1em 0;
+    padding: .4em .8em;
+    font-size: 1.5em;
+    text-align: center;
+    color: #0bffe4;
+    font-weight: bold;
+    border: .1em solid #0bffe4;
+    border-radius: .3em;
+    cursor: pointer;
+    box-shadow: 0px 0px .5em #0bffe4, inset 0px 0px .5em #0bffe4;
+}
+
+.kuma-weapon-selector {
+    width: 20.5em;
+    font-size: 1.1em;
+}
+
+.setting-container {
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    width: 45em;
+    background-color: #181818;
+    border-radius: 0.7em;
+    /* padding-top: 1.5em; */
+    margin-top: 1em;
+}
+
+.bingo-card-container {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 49em;
+    height: 58em;
+    padding: 271px 0px 2px 7px;
+    /* background-color: #fff; */
+    overflow: hidden;
+    background-image: url(background_nw2.png);
+    background-size: 58em auto;
+    background-position: 50% 43%;
+    background-repeat: no-repeat;
+}
+
+.bingo-card-table-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bingo-card-table {
+    border-collapse: separate;
+    border-spacing: .4em;
+    table-layout: fixed;
+    margin-left: 0%;
+}
+
+.bingo-card-table td {
+    width: 90px;
+    height: 90px;
+    background-color:#181818;    
+    text-align: center;
+}
+
+.bingo-card-table td.is_punched {
+    background-color: #0bffe4 !important;
+}
+
+.bingo-card-table td img {
+    -webkit-user-drag: none;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
